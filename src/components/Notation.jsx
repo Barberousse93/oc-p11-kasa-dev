@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/components/Notation.css'
 
 function Notation(datas) {
   const notation = datas.notation
   const [rating, setRating] = useState(notation)
   const [hover, setHover] = useState(notation)
+
+  useEffect(() => {
+    if (!rating) {
+      setRating(notation)
+      setHover(notation)
+    }
+  }, [notation])
 
   // Composant Rating (inspiration Internet)
   // props : Nombre d'étoiles devant être active au chargement.
