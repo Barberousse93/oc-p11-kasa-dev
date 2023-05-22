@@ -1,0 +1,66 @@
+.nomTagHost {
+  width: 90%;
+  position: relative;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.detailContainer {
+  height: 100%;
+}
+
+.listeEquipements {
+  list-style: none;
+}
+
+.detailCollapse {
+  width: 48%;
+}
+
+.detailDescContainer {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 380px) {
+  .nomTagHost {
+    flex-direction: column;
+    margin: 10px 0;
+    max-width: 90%;
+  }
+  .detailDescContainer {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  .detailCollapse {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 1024px) {
+  .nomTagHost {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nomTag {
+    max-width: 70%;
+  }
+  .detailDescContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .detailCollapse {
+    width: 100%;
+  }
+}

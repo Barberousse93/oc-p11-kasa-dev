@@ -1,0 +1,13 @@
+.cardsContainer {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px 0;
+}

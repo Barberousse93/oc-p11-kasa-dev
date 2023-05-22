@@ -1,0 +1,27 @@
+header {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 380px) {
+  header {
+    width: 95%;
+    left: 0;
+    transform: translateX(0);
+    margin: 10px 0;
+  }
+  .headerLogo {
+    transform: scale(0.75);
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .headerLogo {
+    transform: scale(0.9);
+  }
+}

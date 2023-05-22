@@ -1,0 +1,29 @@
+.etoiles {
+  width: fit-content;
+}
+
+.etoile {
+  color: #e3e3e3;
+  margin: 5px;
+}
+
+.etoile.check {
+  color: var(--color);
+}
+
+@media screen and (max-width: 380px) {
+  .etoile i,
+  .etoile.check i {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .etoiles {
+    display: flex;
+    /* flex-direction: column-reverse; */
+  }
+  .etoile i,
+  .etoile.check i {
+    font-size: 1 rem;
+  }
+}

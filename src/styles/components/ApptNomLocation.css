@@ -1,0 +1,26 @@
+.apptNomLocation {
+  max-width: 70%;
+  width: fit-content;
+}
+
+.nomTitre {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+.nomLocation {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color);
+}
+
+@media screen and (max-width: 380px) {
+  .nomTitre {
+    font-size: 1.5rem;
+  }
+
+  .nomLocation {
+    font-size: 1.2rem;
+  }
+}

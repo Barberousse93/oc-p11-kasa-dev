@@ -1,0 +1,60 @@
+.collapseTitle {
+  background-color: var(--color);
+  color: #fff;
+  border-radius: 5px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.collapseTitle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.collapseContent {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  background-color: #f7f7f7;
+  color: var(--color);
+  border-radius: 5px;
+  padding: 0 30px;
+  margin: 15px 0px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.collapseContent.visible {
+  height: 150px; /* !!!!!! */
+  overflow-y: auto;
+}
+
+.icon i {
+  transition: 0.5s ease;
+}
+
+.icon.active i {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 380px) {
+  .collapseTitle {
+    height: 30px;
+    font-size: 1.1rem;
+  }
+  .collapseContent {
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .collapseContent.visible {
+    height: 100px;
+  }
+}

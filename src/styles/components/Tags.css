@@ -1,0 +1,34 @@
+.tagsContainer {
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.tag {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: var(--color);
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin: 5px 5px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 380px) {
+  .tag {
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  .tag {
+    padding: 10px 10px;
+    margin-bottom: 5px;
+  }
+  .tagsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

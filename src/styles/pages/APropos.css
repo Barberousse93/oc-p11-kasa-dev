@@ -1,0 +1,14 @@
+.aboutContainer {
+  position: relative;
+  width: 85%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 380px) {
+  .aboutContainer {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
