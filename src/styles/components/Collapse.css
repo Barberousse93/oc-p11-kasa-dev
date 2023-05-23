@@ -1,3 +1,13 @@
+.collapse {
+  display: grid;
+  grid-template-rows: auto 0fr;
+  transition: all 0.3s ease-in-out;
+}
+
+.collapse.visible {
+  grid-template-rows: auto 1fr;
+}
+
 .collapseTitle {
   background-color: var(--color);
   color: #fff;
@@ -10,7 +20,6 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
 }
 
 .collapseTitle:hover {
@@ -19,7 +28,6 @@
 }
 
 .collapseContent {
-  height: 0;
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   background-color: #f7f7f7;
@@ -31,10 +39,11 @@
   font-weight: 400;
 }
 
-.collapseContent.visible {
-  height: 150px; /* !!!!!! */
+/* .collapseContent.visible {
+  grid-template-rows: 1fr;
+  height: 150px;
   overflow-y: auto;
-}
+}  */
 
 .icon i {
   transition: 0.5s ease;
@@ -54,7 +63,7 @@
     padding: 0 10px;
   }
 
-  .collapseContent.visible {
+  /* .collapseContent.visible {
     height: 100px;
-  }
+  } */
 }

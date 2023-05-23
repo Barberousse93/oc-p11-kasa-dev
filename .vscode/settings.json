@@ -1,6 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.tabSize": 2,
   "eslint.run": "onSave",
   "prettier.bracketSameLine": true,
